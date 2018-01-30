@@ -4,31 +4,11 @@ import { connect } from 'react-redux';
 import chroma from 'chroma-js';
 import blind from 'color-blind';
 import { setColorBlind } from 'actions/colors';
+import {
+  blindSettings,
+  blindTypes
+} from 'utils/blindSettings';
 import style from './style.css';
-
-const blindTypes = [
-  'common',
-  'trichromat',
-  'dichromat',
-  'monochromat',
-];
-
-const blindSettings = {
-  trichromat: [
-    'protanomaly',
-    'deuteranomaly',
-    'tritanomaly',
-  ],
-  dichromat: [
-    'protanopia',
-    'deuteranopia',
-    'tritanopia',
-  ],
-  monochromat: [
-    'achromatomaly',
-    'achromatopsia',
-  ],
-};
 
 class ColorBlindOptions extends Component {
   static propTypes = {
@@ -60,6 +40,7 @@ class ColorBlindOptions extends Component {
 
     return (
       <div
+        className={style.container}
         style={{
           color: isDark ? '#fff' : '#000',
           backgroundColor: containerBackground,

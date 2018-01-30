@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
 import store from 'store/configureStore.js';
 import { Provider } from 'react-redux';
-import Preview from 'components/preview';
+import PreviewList from 'components/previewList';
 import Controls from 'components/controls';
 import Chrome from 'components/chrome';
-import ColorBlindOptions from 'components/colorBlindOptions';
 import SavedSwatches from 'components/savedSwatches';
 import isElectron from 'utils/isElectron.js';
 import style from  './App.css';
@@ -18,8 +17,7 @@ class App extends Component {
             <Chrome />
           ) : undefined}
           
-          <ColorBlindOptions />
-          <Preview />
+          <PreviewList />
           <SavedSwatches />
           <Controls />
         </div>

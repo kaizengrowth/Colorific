@@ -6,6 +6,8 @@
   opacity: 0.8;
   border-top: solid 2px;
   border-bottom: solid 1px;
+  flex-grow: 0;
+  flex-shrink: 0;
 
   &.inactive {
     opacity: 0.5;

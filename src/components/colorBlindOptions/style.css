@@ -70,3 +70,8 @@
   width: 10px;
   height: 10px;
 }
+
+.container {
+  flex-grow: 0;
+  flex-shrink: 0;
+}
