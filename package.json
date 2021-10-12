@@ -71,7 +71,7 @@
     "postinstall": "install-app-deps"
   },
   "devDependencies": {
-    "electron": "^1.7.10",
+    "electron": "^11.5.0",
     "electron-builder": "^19.55.2"
   },
   "jest": {
